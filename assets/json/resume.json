@@ -21,68 +21,36 @@
       }
     ]
   },
-  "work": [
+  "interests": [
     {
-      "name": "KRAFTON",
-      "position": " Deep Learning Research Internship",
-      "url": "https://www.krafton.ai/en/",
-      "startDate": "23-06",
-      "endDate": "24-01",
-      "summary": "Researching Foundation Models (FMs) such as LLaVA and GPT, and finding new tasks by leveraging FMs"
+      "name": "Foundation Models",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Vision Language Models",
+        "Large Language Models"
+      ]
+      
     },
     {
-      "name": "Korean Army",
-      "position": " (Mandatory) Military Service",
-      "url": "https://www.army.mil.kr/english/index..do",
-      "startDate": "16-05",
-      "endDate": "18-02",
-      "summary": ""
-    }
-  ],
-  "education": [
-    {
-      "institution": "Seoul National University",
-      "url": "https://en.snu.ac.kr/",
-      "area": "The Graduate School of Artificial Intelligence",
-      "studyType": "Ph.D.",
-      "startDate": "22-09",
-      "endDate": "25-02"
+      "name": "Vision",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Clustering",
+        "Retrieval"
+      ]
+      
     },
     {
-      "institution": "Seoul National University",
-      "url": "https://en.snu.ac.kr/",
-      "area": "The Department of Mathematical Sciences",
-      "studyType": "M.S.",
-      "startDate": "20-02",
-      "endDate": "22-08"
-    },
-    {
-      "institution": "Dankook University",
-      "url": "https://www.dankook.ac.kr/en/web/international",
-      "area": "The Department of Mathematics Education",
-      "studyType": "B.S.",
-      "startDate": "14-03",
-      "endDate": "20-02"
+      "name": "Generative Models",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Diffusion models",
+        "Variational Autoencoders"
+      ]
+      
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "teaching": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
+
   "publications": [
     {
       "name": "Image Clustering Conditioned on Text Criteria",
@@ -113,6 +81,94 @@
       "summary": "Generative adversarial networks, Infinitely Large Networks, Theory"
     }
   ],
+  "education": [
+    {
+      "institution": "Seoul National University",
+      "url": "https://en.snu.ac.kr/",
+      "area": "The Graduate School of Artificial Intelligence",
+      "studyType": "Ph.D.",
+      "startDate": "22-09",
+      "endDate": "25-02"
+    },
+    {
+      "institution": "Seoul National University",
+      "url": "https://en.snu.ac.kr/",
+      "area": "The Department of Mathematical Sciences",
+      "studyType": "M.S.",
+      "startDate": "20-02",
+      "endDate": "22-08"
+    },
+    {
+      "institution": "Dankook University",
+      "url": "https://www.dankook.ac.kr/en/web/international",
+      "area": "The Department of Mathematics Education",
+      "studyType": "B.S.",
+      "startDate": "14-03",
+      "endDate": "20-02"
+    }
+  ],
+  "experience": [
+    {
+      "name": "KRAFTON",
+      "position": " Deep Learning Research Internship",
+      "url": "https://www.krafton.ai/en/",
+      "startDate": "23-06",
+      "endDate": "24-01",
+      "summary": "Researching Foundation Models (FMs) such as LLaVA and GPT, and finding new tasks by leveraging FMs"
+    },
+    {
+      "name": "Korean Army",
+      "position": " (Mandatory) Military Service",
+      "url": "https://www.army.mil.kr/english/index..do",
+      "startDate": "16-05",
+      "endDate": "18-02",
+      "summary": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "Samsung DS excellent paper awardd",
+      "date": "2023",
+      "awarder": "Samsung DS"
+    },
+    {
+      "title": "Best poster awards",
+      "date": "2023",
+      "awarder": "SNU Artificial Intelligence Institute",
+      "url": "https://aiis.snu.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=449&sca=%EC%97%B0%EA%B5%AC%EC%9B%90+%EC%86%8C%EC%8B%9D&lan="
+    },
+    {
+      "title": "Outstanding TA award",
+      "date": "Fall, 2021",
+      "awarder": "Department of Mathematical Sciences",
+      "url": "https://www.math.snu.ac.kr/board/index.php?mid=page_iFgL02",
+      "summary": "I received the Outstanding TA Award for my work for the Mathematical Foundations of Deep Neural Networks course in Fall 2021."
+    }
+  ],
+  "teaching assistant": [
+    {
+      "title": "Generative AI and Foundation Models",
+      "date": "2024",
+      "awarder": "Seoul National University",
+      "url": "https://ernestryu.com/courses/FM.html"
+    },
+    {
+      "title": "Mathematical Foundations of Deep Neural Networks",
+      "date": "2021, 2023, 2024",
+      "awarder": "Seoul National University",
+      "url": "https://ernestryu.com/courses/deep_learning.html"
+    },
+    {
+      "title": "Mathematical Algorithms 1 (Graduate)",
+      "date": "2021",
+      "awarder": "Seoul National University"
+    },
+    {
+      "title": "Calculus",
+      "date": "2020",
+      "awarder": "Seoul National University"
+    }
+  ],
   "languages": [
     {
       "language": "Korean",
@@ -123,35 +179,6 @@
       "language": "English",
       "fluency": "Fluent",
       "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Foundation Models",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Vision Language Models",
-        "Large Language Models"
-      ]
-      
-    },
-    {
-      "name": "Vision",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Clustering",
-        "Retrieval"
-      ]
-      
-    },
-    {
-      "name": "Generative Models",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Diffusion models",
-        "Variational Autoencoders"
-      ]
-      
     }
   ]
 }
