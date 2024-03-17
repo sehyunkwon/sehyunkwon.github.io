@@ -85,7 +85,7 @@
     {
       "institution": "Seoul National University",
       "url": "https://en.snu.ac.kr/",
-      "area": "The Graduate School of Artificial Intelligence",
+      "area": "Graduate School of Artificial Intelligence",
       "studyType": "Ph.D.",
       "startDate": "22-09",
       "endDate": "25-02"
@@ -93,7 +93,7 @@
     {
       "institution": "Seoul National University",
       "url": "https://en.snu.ac.kr/",
-      "area": "The Department of Mathematical Sciences",
+      "area": "Department of Mathematical Sciences",
       "studyType": "M.S.",
       "startDate": "20-02",
       "endDate": "22-08"
@@ -101,7 +101,7 @@
     {
       "institution": "Dankook University",
       "url": "https://www.dankook.ac.kr/en/web/international",
-      "area": "The Department of Mathematics Education",
+      "area": "Department of Mathematics Education",
       "studyType": "B.S.",
       "startDate": "14-03",
       "endDate": "20-02"
@@ -127,7 +127,7 @@
   ],
   "awards": [
     {
-      "title": "Samsung DS excellent paper awardd",
+      "title": "Samsung DS excellent paper award",
       "date": "2023",
       "awarder": "Samsung DS"
     },
