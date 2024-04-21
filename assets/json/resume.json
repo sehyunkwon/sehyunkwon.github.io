@@ -109,8 +109,16 @@
   ],
   "experience": [
     {
+      "name": "Naver AI Lab",
+      "position": "Research Internship",
+      "url": "https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab",
+      "startDate": "24-06",
+      "endDate": "TBD",
+      "summary": "Topic: TBD"
+    },
+    {
       "name": "KRAFTON",
-      "position": " Deep Learning Research Internship",
+      "position": "Research Internship",
       "url": "https://www.krafton.ai/en/",
       "startDate": "23-06",
       "endDate": "24-01",

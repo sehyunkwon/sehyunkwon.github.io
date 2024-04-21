@@ -1,11 +1,8 @@
 ---
 layout: post
-title: Research internship at KRAFTON has finished.
 date: 2024-01-31 16:11:00-0400
-inline: false
+inline: true
 related_posts: false
 ---
 
-XXX TBW XXX.
-
----
+[Research internship at KRAFTON has finished.](https://www.krafton.ai/en/culture/story/) 

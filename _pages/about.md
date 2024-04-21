@@ -18,8 +18,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! I am a Ph.D student in [the Graduate School of Artificial Intelligence](https://gsai.snu.ac.kr/) at [Seoul National University](https://en.snu.ac.kr/) advised by [Ernest K. Ryu](https://ernestryu.com/). My current research interests are `Vision Language Models` and `Large Language Models`. During my Ph.D., I am honored to have been doing a deep learning research internship at [KRAFTON](https://www.krafton.ai/en/) where I closely worked with [Kangwook Lee](https://kangwooklee.com/aboutme/) and [Dimitris Papailiopoulos](https://papail.io/).
+Hello! I am a Ph.D student in [`the Graduate School of Artificial Intelligence`](https://gsai.snu.ac.kr/) at [`Seoul National University`](https://en.snu.ac.kr/) advised by [`Ernest K. Ryu`](https://ernestryu.com/). My current research interests are Vision Language Models and Large Language Models. 
 
-Prior, I recieved M.S. degree in [the Department of Mathematical Sciences](https://www.math.snu.ac.kr/board/index.php?mid=Portal) at Seoul National University and B.S. degree in [the Department of Mathematics Education](https://cms.dankook.ac.kr/web/mathedu/home) at Dankook University.
+I am currently doing an AI research internship at [`Naver AI Lab`](https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab). Prior, I did a deep learning research internship at [`KRAFTON`](https://www.krafton.ai/en/) where I closely worked with [Kangwook Lee](https://kangwooklee.com/aboutme/) and [Dimitris Papailiopoulos](https://papail.io/).
 
-Also, I am planning to graduate in February 2025 and finding an internship or job in the industry! 
+Also, I recieved M.S. degree in [`the Department of Mathematical Sciences`](https://www.math.snu.ac.kr/board/index.php?mid=Portal) at Seoul National University and B.S. degree in [`the Department of Mathematics Education`](https://cms.dankook.ac.kr/web/mathedu/home) at Dankook University.
