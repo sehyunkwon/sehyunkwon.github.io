@@ -2,26 +2,42 @@
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-"ryu":
-  - firstname: ["Ernest", "Ernest K.", "E. K."]
-    url: https://ernestryu.com/
+"park":
+  - firstname: ["Jaeseung"]
+    # url: https://jadenpark0.github.io/
+
+"kim":
+  - firstname: ["Jaeyeon"]
+    # url: https://jaeyeonkim01.github.io/
 
 "lee":
-  - firstname: ["Kangwook", "K."]
-    url: https://kangwooklee.com/aboutme/
+  - firstname: ["Jason", "Jason D."]
+    # url: https://jasondlee88.github.io/
+
+"park":
+  - firstname: ["Jongho", "J."]
+    # url: https://pages.cs.wisc.edu/~jjhpark/
+
+"ryu":
+  - firstname: ["Ernest", "Ernest K.", "E. K."]
+    # url: https://ernestryu.com/
+
+"lee":
+  - firstname: ["Kangwook"]
+    # url: https://kangwooklee.com/aboutme/
 
 "cho":
   - firstname: ["Jaewoong", "J."]
-    url: https://sites.google.com/view/jaewoongcho
+    # url: https://sites.google.com/view/jaewoongcho
 
 "choi":
   - firstname: ["Joo Young", "J."]
-    url: https://lthilnklover.github.io/
+    # url: https://lthilnklover.github.io/
 
 "yoon":
   - firstname: ["TaeHo", "T."]
-    url: https://tetrzim.github.io/
+    # url: https://tetrzim.github.io/
 
 "no":
   - firstname: ["Albert", "A."]
-    url: https://albert-no.github.io/team/
+    # url: https://albert-no.github.io/team/

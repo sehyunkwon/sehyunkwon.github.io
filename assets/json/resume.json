@@ -53,9 +53,16 @@
 
   "publications": [
     {
+      "name": "Task Diversity Shortens the ICL Plateau",
+      "publisher": "arXiv",
+      "releaseDate": "2024.10",
+      "url": "https://arxiv.org/abs/2410.05448",
+      "summary": "In-context learning, Language Models"
+    },
+    {
       "name": "Image Clustering Conditioned on Text Criteria",
       "publisher": "International Conference on Learning Representations",
-      "releaseDate": "2024",
+      "releaseDate": "2024.01",
       "url": "https://openreview.net/forum?id=G2cG3mQqop",
       "summary": "Vision Language Model, Large Language Model, Clustering"
     },
@@ -113,8 +120,8 @@
       "position": "Research Internship",
       "url": "https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab",
       "startDate": "24-06",
-      "endDate": "TBD",
-      "summary": "Topic: TBD"
+      "endDate": "24-11",
+      "summary": "Topic: Vision Language Representations"
     },
     {
       "name": "KRAFTON",
@@ -122,7 +129,7 @@
       "url": "https://www.krafton.ai/en/",
       "startDate": "23-06",
       "endDate": "24-01",
-      "summary": "Researching Foundation Models (FMs) such as LLaVA and GPT, and finding new tasks by leveraging FMs"
+      "summary": "Topic: Finding novel tasks by leveraging Foundation Models"
     },
     {
       "name": "Korean Army",
@@ -134,6 +141,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "Youlchon AI STAR",
+      "date": "2024",
+      "awarder": "Youlchon & SNU AIIS",
+      "url": "https://gsai.snu.ac.kr/%ec%86%8c%ec%8b%9d-%ec%84%9c%ec%9a%b8%eb%8c%80-ai%ec%97%b0%ea%b5%ac%ec%9b%90%c2%b7%ec%9c%a8%ec%b4%8c%ec%9e%ac%eb%8b%a8-%ec%9c%a8%ec%b4%8cai%ec%9e%a5%ed%95%99%ec%83%9d-%ec%84%a0/"
+    },
     {
       "title": "Samsung DS excellent paper award",
       "date": "2023",
