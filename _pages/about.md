@@ -19,7 +19,7 @@ social: false # includes social icons at the bottom of the page
 ---
 Hello! I am a Staff Engineer at Samsung Research.
 
-I recently recieved Ph.D. from the Graduate School of Artificial Intelligence at Seoul National University, where I worked under the supervision of [`Ernest K. Ryu`](https://ernestryu.com/). Prior to that, I recieved M.S. in the Department of Mathematical Sciences at Seoul National University and B.S. in Mathematics Education at Dankook University.
+I recently recieved Ph.D. from the Graduate School of Artificial Intelligence at Seoul National University, where I worked under the supervision of [Ernest K. Ryu](https://ernestryu.com/). Prior to that, I recieved M.S. in the Department of Mathematical Sciences at Seoul National University and B.S. in Mathematics Education at Dankook University.
 
 During my Ph.D., I worked as a research intern at NAVER AI Lab and KRAFTON AI.
 
