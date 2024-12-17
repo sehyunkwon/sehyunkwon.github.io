@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Sehyun Kwon",
-    "label": "Ph.D. Student",
+    "label": "Deep Learning Engineer",
     "image": "",
     "email": "kagok@snu.ac.kr",
     "url": "https://sehyunkwon.github.io/",
@@ -27,7 +27,7 @@
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Vision Language Models",
-        "Large Language Models"
+        "Language Models"
       ]
       
     },
@@ -38,16 +38,6 @@
         "Clustering",
         "Retrieval"
       ]
-      
-    },
-    {
-      "name": "Generative Models",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Diffusion models",
-        "Variational Autoencoders"
-      ]
-      
     }
   ],
 
@@ -115,6 +105,14 @@
     }
   ],
   "experience": [
+    {
+      "name": "Samsung Research",
+      "position": "Staff Engineer",
+      "url": "https://research.samsung.com/",
+      "startDate": "25-03",
+      "endDate": "",
+      "summary": "Topic: Multi-modal Retrieval and Clustering"
+    },
     {
       "name": "Naver AI Lab",
       "position": "Research Internship",
