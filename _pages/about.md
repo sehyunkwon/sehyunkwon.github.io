@@ -14,8 +14,8 @@ profile:
   #   <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true # includes a list of papers marked as "selected={false}"
+social: false # includes social icons at the bottom of the page
 ---
 
 Hello! I am a Ph.D student in [`the Graduate School of Artificial Intelligence`](https://gsai.snu.ac.kr/) at [`Seoul National University`](https://en.snu.ac.kr/) advised by [`Ernest K. Ryu`](https://ernestryu.com/). My current research interests are Vision Language Models and Large Language Models. 
