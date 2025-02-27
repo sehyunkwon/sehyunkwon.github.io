@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Research internship at NAVER AI Lab has finished.
+Research internship at [NAVER AI Lab](https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab) has finished.
