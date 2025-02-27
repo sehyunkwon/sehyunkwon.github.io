@@ -6,7 +6,7 @@ subtitle: kagok [AT] snu.ac.kr
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: IMG_2365.JPG
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
