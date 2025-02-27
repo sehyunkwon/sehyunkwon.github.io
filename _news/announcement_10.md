@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will be joining Samsung Research as a Staff Engineer.
+I am joining [Samsung Research](https://research.samsung.com/) as a Staff Engineer.
