@@ -131,7 +131,7 @@
     },
     {
       "name": "Korean Army",
-      "position": " (Mandatory) Military Service",
+      "position": "Military Service",
       "url": "https://www.army.mil.kr/english/index..do",
       "startDate": "16-05",
       "endDate": "18-02",
@@ -159,7 +159,7 @@
     {
       "title": "Outstanding TA award",
       "date": "Fall, 2021",
-      "awarder": "Department of Mathematical Sciences",
+      "awarder": "Department of Mathematical Sciences, SNU",
       "url": "https://www.math.snu.ac.kr/board/index.php?mid=page_iFgL02",
       "summary": "I received the Outstanding TA Award for my work for the Mathematical Foundations of Deep Neural Networks course in Fall 2021."
     }
