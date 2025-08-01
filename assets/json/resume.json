@@ -44,9 +44,9 @@
   "publications": [
     {
       "name": "Task Diversity Shortens the ICL Plateau",
-      "publisher": "arXiv",
-      "releaseDate": "2024.10",
-      "url": "https://arxiv.org/abs/2410.05448",
+      "publisher": "TMLR",
+      "releaseDate": "2025.08",
+      "url": "https://openreview.net/forum?id=7t5DzaJOdB",
       "summary": "In-context learning, Language Models"
     },
     {
