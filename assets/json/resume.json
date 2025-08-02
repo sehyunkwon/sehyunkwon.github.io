@@ -43,8 +43,8 @@
 
   "publications": [
     {
-      "name": "Task Diversity Shortens the ICL Plateau",
-      "publisher": "TMLR",
+      "name": "Task Diversity Shortens the In-context Learning Plateau",
+      "publisher": "Transactions on Machine Learning Research",
       "releaseDate": "2025.08",
       "url": "https://openreview.net/forum?id=7t5DzaJOdB",
       "summary": "In-context learning, Language Models"
