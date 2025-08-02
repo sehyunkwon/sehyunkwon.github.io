@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My co-first author [paper](https://arxiv.org/abs/2410.05448) has been released! In this paper, we analyzed the impact of task diversity on optimization during the training of language models.
+Thrilled to share that our co‑first‑authored [paper](https://openreview.net/forum?id=7t5DzaJOdB) on task diversity for in‑context learning of language models is accepted to TMLR! 🎉
