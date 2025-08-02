@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: kagok [AT] snu.ac.kr
+subtitle: shyun.kwon [AT] samsung.com
 
 profile:
   align: right
