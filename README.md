@@ -1,4 +1,10 @@
-# al-folio
+# Sehyun Kwon's Personal Website
+
+Personal academic website built in the style of [Jon Barron](https://jonbarron.info/).
+
+Visit: https://sehyunkwon.github.io
+
+## al-folio
 
 <div align="center">
 
