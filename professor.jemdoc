@@ -1,0 +1,24 @@
+# jemdoc: menu{MENU}{professor.html}, nodate
+# jemdoc: title{Professor | Sehyun Kwon}
+= Professor
+
+~~~
+{}{img_left}{assets/img/profile.jpg}{Sehyun Kwon}{153}{204}{}
+*Sehyun Kwon*\n
+Assistant Professor\n
+Department of Mathematical Data Science\n
+[https://www.hanyang.ac.kr/web/eng Hanyang University ERICA]
+
+Email: sehyunk [at] hanyang [dot] ac [dot] kr\n
+Office: TBD
+
+[https://scholar.google.com/citations?user=p9oKN9kAAAAJ Google Scholar] · [https://www.linkedin.com/in/sehyun-kwon-79175823a LinkedIn] · [/cv.html Curriculum Vitae]
+~~~
+
+== Biography
+
+Sehyun Kwon is an assistant professor in the Department of Mathematical Data Science at Hanyang University ERICA. His research focuses on artificial intelligence and data science, with particular interests in the principles and applications of foundation models.
+
+Professor Kwon received a B.S. in Mathematics Education from Dankook University in 2020. He earned an M.S. in Mathematical Sciences in 2022 and a Ph.D. in Artificial Intelligence in 2025 from Seoul National University, where he was advised by [https://ernestryu.com/ Ernest K. Ryu].
+
+During his doctoral studies, he received the Youlchon AI Star Fellowship in 2024 and worked as a research scientist intern at KRAFTON AI and NAVER AI Lab. In 2025, he joined Samsung Research as a Staff Engineer, where he developed on-device AI models. In 2026, he joined the Department of Mathematical Data Science at Hanyang University ERICA as an Assistant Professor.

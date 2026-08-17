@@ -1,0 +1,10 @@
+JEMDOC ?= jemdoc-rs
+SOURCES := index.jemdoc news.jemdoc publications.jemdoc professor.jemdoc members.jemdoc join.jemdoc teaching.jemdoc mat1004.jemdoc mat4091.jemdoc cv.jemdoc
+
+.PHONY: all preview
+
+all:
+	$(JEMDOC) -c site.conf $(SOURCES)
+
+preview: all
+	python3 -m http.server 8000 --bind 127.0.0.1

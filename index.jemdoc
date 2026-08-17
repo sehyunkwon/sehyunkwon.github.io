@@ -1,0 +1,25 @@
+# jemdoc: menu{MENU}{index.html}, nodate
+# jemdoc: title{Research Group}
+= Research Group
+
+~~~
+*Students interested in these research directions can find more information on the [/join.html Join the Group] page.*
+~~~
+
+Our research group is in the [https://mds.hanyang.ac.kr/eng/ Department of Mathematical Data Science] at [https://www.hanyang.ac.kr/web/eng Hanyang University ERICA] in Ansan, South Korea. Our main goal is to understand and improve artificial intelligence.
+
+Please refer to the research areas below for our current research interests.
+
+== Research Areas
+
+=== Language Models
+
+We investigate how language models learn, represent, and use linguistic information. We are interested in improving their learning methods and understanding the mechanisms behind their capabilities and limitations.
+
+=== Vision-Language Models
+
+We study models that jointly learn from visual and linguistic information. Our interests include multimodal learning, vision-language understanding, and learning from large-scale multimodal data.
+
+=== Machine Learning and Deep Learning
+
+Beyond our primary focus, we are interested in a broad range of topics in machine learning and deep learning. We welcome research questions that are fundamentally interesting, empirically grounded, and capable of expanding our understanding of AI models.

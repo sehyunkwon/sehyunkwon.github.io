@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{publications.html}, nodate
+# jemdoc: title{Publications | Sehyun Kwon}
+= Publications
+
+== Preprints
+
+- SpreadRAG: Geometric Bottleneck of Single-Vector Retrieval in Multi-Hop RAG \n
+Sahngmin Yoo, *Sehyun Kwon*†, 2026.
+
+== Journal Papers
+
+- [https://openreview.net/forum?id=7t5DzaJOdB Task Diversity Shortens the In-context Learning Plateau] \n
+Jaeyeon Kim\*, *Sehyun Kwon*\*, Joo Young Choi, Jongho Park, Jaewoong Cho, Jason D. Lee, Ernest K. Ryu, /Transactions on Machine Learning Research (TMLR), 2025/. \n
+[https://openreview.net/forum?id=7t5DzaJOdB paper] / [https://github.com/sehyunkwon/task-diversity-icl code]
+
+== Conference Papers
+
+- [https://openreview.net/forum?id=G2cG3mQqop Image Clustering Conditioned on Text Criteria] \n
+*Sehyun Kwon*, Jaeseung Park, Minkyu Kim, Jaewoong Cho, Ernest K. Ryu, Kangwook Lee, /International Conference on Learning Representations (ICLR), 2024/. \n
+[https://openreview.net/forum?id=G2cG3mQqop paper] / [https://github.com/sehyunkwon/ICTC code]
+- [https://proceedings.mlr.press/v202/kwon23a.html Rotation and Translation Invariant Representation Learning with Implicit Neural Representations] \n
+*Sehyun Kwon*, Joo Young Choi, Ernest K. Ryu, /International Conference on Machine Learning (ICML), 2023/. \n
+[https://proceedings.mlr.press/v202/kwon23a.html paper] / [https://github.com/sehyunkwon/IRL-INR code]
+- [https://proceedings.mlr.press/v139/no21a.html WGAN with an Infinitely Wide Generator Has No Spurious Stationary Points] \n
+Albert No, TaeHo Yoon, *Sehyun Kwon*, Ernest K. Ryu, /International Conference on Machine Learning (ICML), 2021/. \n
+[https://proceedings.mlr.press/v139/no21a.html paper] / [https://github.com/sehyunkwon/Infinite-WGAN code]
+
+== Workshop Papers
+
+- [https://openreview.net/forum?id=shciCbSk9h Diffusion Probabilistic Models Generalize when They Fail to Memorize] \n
+TaeHo Yoon, Joo Young Choi, *Sehyun Kwon*, Ernest K. Ryu, /ICML Workshop on Structured Probabilistic Inference & Generative Modeling, 2023/. \n
+[https://openreview.net/forum?id=shciCbSk9h paper]
