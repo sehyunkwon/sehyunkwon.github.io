@@ -129,14 +129,3 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
-
-.homepage-campus-image {
-  width: 50%;
-  height: auto;
-}
-
-@media only screen and (max-width: 700px) {
-  .homepage-campus-image {
-    width: 100%;
-  }
-}
