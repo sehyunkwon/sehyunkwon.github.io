@@ -11,10 +11,6 @@
 - *Semester:* Fall 2026
 - *Lecture Schedule:* MON 11:00-13:00 Y317-0203, WED 11:00-13:00 Y317-0409
 
-== Course Background
-
-This course was developed with reference to [https://cs231n.stanford.edu/ Stanford CS231n] and [https://ernestryu.com/courses/deep_learning.html Mathematical Foundations of Deep Neural Networks] at Seoul National University.
-
 == Course Materials
 
 - [/assets/pdf/2026-Fall-DL-chap0.pdf Chapter 0: Introduction]
@@ -22,5 +18,9 @@ This course was developed with reference to [https://cs231n.stanford.edu/ Stanfo
 == Assignments
 
 Assignment information will be posted here.
+
+== References
+
+This course was developed with reference to [https://cs231n.stanford.edu/ Stanford CS231n] and [https://ernestryu.com/courses/deep_learning.html Mathematical Foundations of Deep Neural Networks] at Seoul National University.
 
 [/teaching.html Back to Courses]

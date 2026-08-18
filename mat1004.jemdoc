@@ -11,10 +11,6 @@
 - *Semester:* Fall 2026
 - *Lecture Schedule:* MON 13:00-15:00 Y317-0503, WED 09:00-11:00 Y317-0504
 
-== Course Background
-
-This course draws substantial inspiration from [https://inst.eecs.berkeley.edu/~cs70/su15/ CS70: Discrete Mathematics and Probability Theory] at UC Berkeley and [http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/ Mathematics for Computer Science] at MIT OpenCourseWare.
-
 == Course Materials
 
 - [/assets/pdf/dm-00-course-overview.handout.pdf Course Overview]
@@ -24,5 +20,9 @@ This course draws substantial inspiration from [https://inst.eecs.berkeley.edu/~
 == Assignments
 
 Assignment information will be posted here.
+
+== References
+
+This course was developed with reference to [https://inst.eecs.berkeley.edu/~cs70/su15/ CS70: Discrete Mathematics and Probability Theory] at UC Berkeley, [http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/ Mathematics for Computer Science] at MIT OpenCourseWare, and Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, McGraw-Hill.
 
 [/teaching.html Back to Courses]
