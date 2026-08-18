@@ -257,6 +257,17 @@ table.imgtable img {
 	height: auto;
 }
 
+.homepage-campus-image {
+	width: 50%;
+	height: auto;
+}
+
+@media only screen and (max-device-width: 700px) {
+	.homepage-campus-image {
+		width: 100%;
+	}
+}
+
 @media print {
 	#layout-menu {
 		display: none;
