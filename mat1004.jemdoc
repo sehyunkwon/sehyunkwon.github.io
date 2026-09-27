@@ -15,27 +15,31 @@
 
 *Course Information*
 
-- [/assets/pdf/dm-00-course-overview.handout.pdf Course Overview]
+- [/assets/pdf/dm-00-01-course-overview.handout.pdf Course Overview]
 
 *Part 1. Logic*
 
 - [/assets/pdf/dm-01-01-propositions.handout.pdf Propositions]
 - [/assets/pdf/dm-01-02-implications.handout.pdf Implications]
-- [/assets/pdf/dm-02-01-inference-rules.handout.pdf Inference Rules]
-- [/assets/pdf/dm-02-02-quantifiers.handout.pdf Quantifiers]
-- [/assets/pdf/dm-02-03-quantified-statements.handout.pdf Quantified Statements]
+- [/assets/pdf/dm-01-03-inference-rules.handout.pdf Inference Rules]
+- [/assets/pdf/dm-01-04-quantifiers.handout.pdf Quantifiers]
+- [/assets/pdf/dm-01-05-quantified-statements.handout.pdf Quantified Statements]
 
 *Part 2. Proofs*
 
-- [/assets/pdf/dm-03-01-direct-proofs.handout.pdf Direct Proofs]
-- [/assets/pdf/dm-03-02-contradiction-and-cases.handout.pdf Contradiction and Cases]
-- [/assets/pdf/dm-04-01-mathematical-induction.handout.pdf Mathematical Induction]
-- [/assets/pdf/dm-04-02-strong-induction.handout.pdf Strong Induction]
+- [/assets/pdf/dm-02-01-direct-proofs.handout.pdf Direct Proofs]
+- [/assets/pdf/dm-02-02-contradiction-and-cases.handout.pdf Contradiction and Cases]
+- [/assets/pdf/dm-02-03-mathematical-induction.handout.pdf Mathematical Induction]
+- [/assets/pdf/dm-02-04-strong-induction.handout.pdf Strong Induction]
 
 *Part 3. Counting*
 
-- [/assets/pdf/dm-05-01-counting-principles.handout.pdf Counting Principles]
-- [/assets/pdf/dm-05-02-counting-methods.handout.pdf Counting Methods]
+- [/assets/pdf/dm-03-01-counting-principles.handout.pdf Counting Principles]
+- [/assets/pdf/dm-03-02-counting-methods.handout.pdf Counting Methods]
+
+*Part 4. Probability*
+
+- [/assets/pdf/dm-04-01-probability.handout.pdf Probability]
 
 == Assignments
 
