@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PageRank · Score redistribution</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fff;color:#20243b;font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:1100px;margin:auto;padding:28px}h1{font-size:26px;color:#252a79;margin:0 0 18px}button,select{font:inherit;background:white;color:#20243b;border:1px solid #bcc4d4;border-radius:6px;padding:8px 12px;min-height:42px}button{cursor:pointer}button:hover{background:#f0f2fb}button:disabled{opacity:.4;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid #7896df;outline-offset:2px}.primary{background:#252a79;color:white;border-color:#252a79}.primary:hover{background:#353b90}button[aria-pressed=true]{background:#eef0fc;border-color:#252a79}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.controls label{display:flex;align-items:center;gap:8px}.workspace{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(220px,1fr);gap:32px;margin:18px 0}.graph{width:100%;height:440px;touch-action:none;user-select:none}.node{cursor:grab}.node text{pointer-events:none}.stats{display:flex;gap:24px;margin:20px 0 8px;font-variant-numeric:tabular-nums;color:#252a79}.row{display:grid;grid-template-columns:24px 1fr 68px;gap:12px;align-items:center;margin:17px 0}.track{height:18px;background:#f0f2f7}.bar{height:100%;background:#5269b8;transition:width .45s ease}.value{font-variant-numeric:tabular-nums;text-align:right}.hint{color:#637087;font-size:14px;margin:10px 0}.status{min-height:24px;font-size:14px;color:#252a79}.scores{padding-top:18px}.scores h2{font-size:17px;font-weight:500;margin:0}.edit{border-top:1px solid #e1e5ee;padding-top:16px}.notice{color:#8c5318;font-size:14px;margin-top:12px}[hidden]{display:none!important}@media(max-width:650px){main{padding:18px}.workspace{grid-template-columns:1fr;gap:0}.graph{height:330px}.scores{padding-top:0}.row{margin:10px 0}.controls label{flex-wrap:wrap}h1{font-size:23px}}@media(prefers-reduced-motion:reduce){.bar{transition:none}}
+.row{grid-template-columns:24px minmax(30px,1fr) 122px;margin:20px 0}.track{height:22px}.value{display:block;font-size:25px;font-weight:600;transform-origin:right center}.delta{display:block;min-height:20px;font-size:13px;text-align:right;font-variant-numeric:tabular-nums}.up{color:#147355}.down{color:#b34f24}.unchanged{color:#798297}.graph-score{font-size:21px;font-weight:600;transform-box:fill-box;transform-origin:center}.stats{flex-wrap:wrap}.settled{font-weight:600;color:#147355}.score-readout{min-width:0}@media(max-width:650px){.row{margin:12px 0}.value{font-size:24px}.graph-score{font-size:18px}}
+.settled{flex-basis:100%;background:#e9f6ef;border-left:4px solid #147355;padding:12px 16px;font-size:20px;font-weight:700}
+</style></head>
+<body><main>
+<h1>PageRank · Score redistribution</h1>
+<div class="controls">
+<label>Example <select id="example"><option value="lecture">Lecture graph · 3 nodes</option><option value="larger">Larger graph · 8 nodes</option></select></label>
+<button class="primary" id="play">Play</button><button id="step">Next round</button><button id="restart">Restart</button>
+</div>
+<div class="stats" aria-live="polite"><span id="round">Round t = 0</span><span id="total">Total score = 1.0000</span><span id="settled" class="settled" role="status" hidden title="Converged numerically: total absolute change between consecutive rounds is less than 0.000001.">Converged — simulation stopped</span></div>
+<div class="workspace">
+<div><svg id="graph" class="graph" role="img" aria-label="Directed graph and current scores"></svg></div>
+<section class="scores"><h2>Current score</h2><p class="hint">Fixed scale: 0–1</p><div id="bars"></div></section>
+</div>
+<div class="edit">
+<div class="controls"><button id="move" aria-pressed="true">Move nodes</button><button id="connect" aria-pressed="false">Connect nodes</button><button id="add">+ Node</button><label>Remove <select id="remove-choice" aria-label="Node to remove"></select></label><button id="remove">Remove node</button></div>
+<p class="hint">Connect nodes: click the source, then the destination. Repeat to remove the link.</p>
+<div id="status" class="status" role="status">Drag nodes to reposition them. Editing the graph restarts the scores.</div>
+<div id="notice" class="notice" hidden></div>
+</div>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
+const examples={lecture:[[1,2],[2],[0]],larger:[[1,2],[2,3],[0,3],[4],[2,5,6],[6],[4,7],[0,4]]};
+let nodes=[],edges=[],scores=[],previous=null,settled=false,round=0,nextId=0,mode='move',source=null,drag=null,timer=null;
+const tolerance=1e-6,reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+function el(tag,attrs={},text){const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);if(text!==undefined)e.textContent=text;return e}
+function pause(){clearTimeout(timer);timer=null;$('play').textContent='Play'}
+function missing(){return nodes.filter(n=>!edges.some(e=>e[0]===n.id))}
+function update(r){const next=Array(nodes.length).fill(0);nodes.forEach((n,i)=>{const dest=edges.filter(e=>e[0]===n.id);dest.forEach(e=>next[nodes.findIndex(v=>v.id===e[1])]+=r[i]/dest.length)});return next}
+function restart(){pause();round=0;source=null;previous=null;settled=false;scores=nodes.map(()=>1/nodes.length);draw()}
+function selectors(){$('remove-choice').replaceChildren(...nodes.map(n=>{const o=document.createElement('option');o.value=n.id;o.textContent=n.label;return o}));$('add').disabled=nodes.length>=16;$('remove').disabled=nodes.length<=1}
+function load(){const g=examples[$('example').value];nodes=g.map((_,i)=>({id:i,label:String.fromCharCode(65+i),x:.5+.42*Math.cos(-Math.PI/2+i*2*Math.PI/g.length),y:.5+.38*Math.sin(-Math.PI/2+i*2*Math.PI/g.length)}));edges=g.flatMap((vs,u)=>vs.map(v=>[u,v]));nextId=nodes.length;selectors();restart();$('status').textContent='Drag nodes to reposition them. Editing the graph restarts the scores.'}
+function step(){if(missing().length||settled)return false;previous=scores;scores=update(previous);round++;settled=scores.reduce((sum,v,i)=>sum+Math.abs(v-previous[i]),0)<tolerance;if(settled)pause();draw(true);return !settled}
+function tick(){if(step())timer=setTimeout(tick,1500);else pause()}
+$('play').onclick=()=>{if(timer!==null){pause();return}if(missing().length)return;$('play').textContent='Pause';timer=setTimeout(tick,1500)};
+$('step').onclick=()=>{pause();step()};$('restart').onclick=restart;$('example').onchange=load;
+for(const m of ['move','connect'])$(m).onclick=()=>{mode=m;source=null;for(const k of ['move','connect'])$(k).setAttribute('aria-pressed',String(k===m));$('status').textContent=m==='move'?'Drag nodes to reposition them.':'Click the source node, then its destination.';drawGraph()};
+$('add').onclick=()=>{if(nodes.length>=16)return;const id=nextId++;nodes.push({id,label:id<26?String.fromCharCode(65+id):'N'+id,x:.35+Math.random()*.3,y:.35+Math.random()*.3});selectors();restart();$('connect').click()};
+$('remove').onclick=()=>{if(nodes.length<=1)return;const id=+$('remove-choice').value;nodes=nodes.filter(n=>n.id!==id);edges=edges.filter(e=>!e.includes(id));selectors();restart()};
+function choose(id){if(mode!=='connect')return;if(source===null){source=id;$('status').textContent='Source '+nodes.find(n=>n.id===id).label+' selected. Click the destination.';drawGraph();return}const a=source,idx=edges.findIndex(e=>e[0]===a&&e[1]===id);if(idx<0)edges.push([a,id]);else edges.splice(idx,1);restart();$('status').textContent='Link '+(idx<0?'added':'removed')+'. Scores restarted. Select another source.'}
+function draw(animate=false){$('round').textContent='Round t = '+round;$('total').textContent='Total score = '+scores.reduce((a,b)=>a+b,0).toFixed(4);$('settled').hidden=!settled;const gaps=missing();$('play').disabled=$('step').disabled=!!gaps.length||settled;$('notice').hidden=!gaps.length;$('notice').textContent='Add an outgoing link from '+gaps.map(n=>n.label).join(', ')+' to run the basic update. Dangling-node handling is not included here.';
+const ids=nodes.map(n=>n.id).join(',');if($('bars').dataset.ids!==ids){$('bars').dataset.ids=ids;$('bars').replaceChildren(...nodes.map(n=>{const row=document.createElement('div');row.className='row';const label=document.createElement('span');label.textContent=n.label;const track=document.createElement('div');track.className='track';const bar=document.createElement('div');bar.className='bar';track.append(bar);const readout=document.createElement('div');readout.className='score-readout';const value=document.createElement('span');value.className='value';const delta=document.createElement('span');delta.className='delta';readout.append(value,delta);row.append(label,track,readout);return row}))}
+[...$('bars').children].forEach((row,i)=>{const value=row.querySelector('.value'),delta=row.querySelector('.delta'),diff=previous?scores[i]-previous[i]:0;row.querySelector('.bar').style.width=100*scores[i]+'%';value.getAnimations().forEach(a=>a.cancel());value.textContent=scores[i].toFixed(4);delta.className='delta '+(Math.abs(diff)<.00005?'unchanged':diff>0?'up':'down');delta.textContent=!previous?'':Math.abs(diff)<.00005?'—':(diff>0?'↑ +':'↓ −')+Math.abs(diff).toFixed(4);if(animate&&previous&&scores[i].toFixed(4)!==previous[i].toFixed(4))pulse(value,diff)});drawGraph();if(animate&&previous)document.querySelectorAll('.graph-score').forEach((label,i)=>{if(scores[i].toFixed(4)!==previous[i].toFixed(4))pulse(label,scores[i]-previous[i])})}
+function pulse(label,diff){if(reducedMotion.matches)return;const color=diff>0?'#147355':'#b34f24';label.animate([{transform:'scale(1)',color,fill:color,fontWeight:600},{transform:'scale(1.16)',color,fill:color,fontWeight:750,offset:.25},{transform:'scale(1)',color:'#252a79',fill:'#252a79',fontWeight:600}],{duration:950,easing:'ease-out'})}
+function drawGraph(){const svg=$('graph'),w=svg.clientWidth,h=svg.clientHeight;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.replaceChildren(el('title',{},'Scores at round '+round));const defs=el('defs'),marker=el('marker',{id:'arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:7,markerHeight:7,orient:'auto-start-reverse'});marker.append(el('path',{d:'M0 0 L10 5 L0 10z',fill:'#8792a6'}));defs.append(marker);svg.append(defs);
+const pos=nodes.map(n=>[40+n.x*(w-80),55+n.y*(h-110)]),radius=25;
+edges.forEach(([a,b])=>{const u=nodes.findIndex(n=>n.id===a),v=nodes.findIndex(n=>n.id===b),[x,y]=pos[u],[xx,yy]=pos[v];let d;if(u===v)d=`M ${x-16} ${y-19} C ${x-62} ${y-76},${x+62} ${y-76},${x+16} ${y-19}`;else{const dx=xx-x,dy=yy-y,len=Math.hypot(dx,dy);if(len<1)return;const bend=edges.some(e=>e[0]===b&&e[1]===a)?26:0,cx=(x+xx)/2-dy/len*bend,cy=(y+yy)/2+dx/len*bend,l1=Math.hypot(cx-x,cy-y),l2=Math.hypot(xx-cx,yy-cy);d=`M ${x+(cx-x)/l1*28} ${y+(cy-y)/l1*28} Q ${cx} ${cy} ${xx-(xx-cx)/l2*30} ${yy-(yy-cy)/l2*30}`}svg.append(el('path',{d,fill:'none',stroke:'#8792a6','stroke-width':1.7,'marker-end':'url(#arrow)'}))});
+nodes.forEach((n,i)=>{const [x,y]=pos[i],g=el('g',{class:'node','data-id':n.id,role:'button',tabindex:0,'aria-label':n.label+', score '+scores[i].toFixed(4)});g.append(el('circle',{cx:x,cy:y,r:radius,fill:source===n.id?'#e1e5fb':'#fff',stroke:'#252a79','stroke-width':source===n.id?3:1.7}),el('text',{x,y:y+5,'text-anchor':'middle',fill:'#20243b','font-size':16},n.label),el('text',{class:'graph-score',x,y:y+49,'text-anchor':'middle',fill:'#252a79','paint-order':'stroke',stroke:'#fff','stroke-width':5},scores[i].toFixed(4)));g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(n.id)}};svg.append(g)})}
+$('graph').onpointerdown=e=>{const g=e.target.closest('.node');if(!g)return;const id=+g.dataset.id;if(mode==='connect'){choose(id);return}drag=id;$('graph').setPointerCapture(e.pointerId)};
+$('graph').onpointermove=e=>{if(drag===null)return;const rect=$('graph').getBoundingClientRect(),n=nodes.find(n=>n.id===drag);n.x=Math.max(0,Math.min(1,(e.clientX-rect.left-40)/(rect.width-80)));n.y=Math.max(.05,Math.min(.95,(e.clientY-rect.top-55)/(rect.height-110)));drawGraph()};
+$('graph').onpointerup=$('graph').onpointercancel=()=>{drag=null};
+load();new ResizeObserver(drawGraph).observe($('graph'));window.addEventListener('pagehide',pause);
+</script></body></html>
